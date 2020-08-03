@@ -89,13 +89,11 @@
                                 if(isset($productDetails)){
                                     foreach($productDetails as $product){ ?>
                                     <tr>
-                                        <td>
-                                            <img src="img/default.png" alt="" height="80px">
-                                        </td>
-                                        <td>Thomas Hardy</td>
-                                        <td>thomashardy@mail.com</td>
-                                        <td>89 Chiaroscuro Rd, Portland, USA</td>
-                                        <td>(171) 555-2222</td>
+                                    <td> <img class ="product-img" src="images/<?php echo $product['image']?>" /> </td>
+                                    <td> <?= $product['product_name'] ?> </td>
+                                    <td> <?= $product['description'] ?></td>
+                                    <td> <?= "£". $product['price'] ?></td>
+                                    <td> <?= $product['stock'] ?></td>
                                         <td>
                                             <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i
                                                     class="material-icons" data-toggle="tooltip"
@@ -105,7 +103,13 @@
                                                     title="Delete">&#xE872;</i></a>
                                         </td>
                                     </tr>
+                                    <?php  } # End of Foreach 
+          
+                                    } else {
+                                     echo "<tr><td colspan='9' style='font-weight: bold;'>No Product found in the Database!</td></tr>";
                                     }
+                                    echo "</table>";
+                                    ?>
                                 </tbody>
                             </table>
                             <div class="clearfix">
