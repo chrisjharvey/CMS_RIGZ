@@ -39,13 +39,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item active mt-2">
                             <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mt-2">
                             <a class="nav-link" href="#">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mt-2">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
                         <li class="nav-item">
